@@ -1,1 +1,33 @@
+<head>
+    <title>Financial Portal</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
 
+<body>
+    <div class="container">
+        <h2>Paynowr</h2>
+      
+      <input type ="text",id="payer" placeholder = "Payer Address">
+      <input type ="text", id="payee" placeholder="Payee Address">
+      <input type ="int", id="amount" placeholder="Amount to Transfer">
+
+      <button class="btn" onclick="transfer()"></button>
+      <button class="btn" onclick="transaction()"></button>
+
+      <p id="view_payer"></p>
+      <p id="view_payee"></p>
+      <p id="view_amount"></p>
+        
+        <form action="/" method="post">
+            <input type="submit" value="Main">
+        </form>
+
+      <script>
+        async function transfer(){
+        }
+        async function transaction(){
+        }
+      </script>
+</div>
+</body>
